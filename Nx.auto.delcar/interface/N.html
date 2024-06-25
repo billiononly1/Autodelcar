@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s forwards;
+        }
+
+        .fade-out {
+            animation: fadeOut 1s forwards;
+        }
+    </style>
+    <title>Next.auto.delcar</title>
+</head>
+<body class="flex justify-end items-center h-screen">
+    <div id="countdown-container" class="bg-[url('./img/bg.png')] bg-cover bg-contain bg-no-repeat text-white p-1 rounded-[1vh] w-[16vh] h-[30vh] relative flex flex-col items-center m-1" style="display: none;">
+        <span id="time-display" class="absolute text-[4vh] text-blue-400 w-auto p-[.5vh] h-auto bg-black text-center bottom-[1vh] font-bold" style="font-family: 'Quantico', sans-serif;">00:00</span>
+    </div>
+    <audio id="alert-sound" src="./sounds/AI.mp3"></audio>
+    <script src="N.js"></script>
+</body>
+</html>
