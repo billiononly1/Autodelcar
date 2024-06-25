@@ -1,7 +1,3 @@
--- NC PROTECT+
-server_scripts { '@nc_PROTECT+/exports/protected.lua', '@nc_PROTECT+/exports/sv.lua' }
-client_scripts { '@nc_PROTECT+/exports/protected.lua', '@nc_PROTECT+/exports/cl.lua' }
-
 fx_version 'cerulean'
 games { 'gta5' }
 
